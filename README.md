@@ -1,7 +1,7 @@
 # PythonWebScraping
 
 #### This Repository contains the following:
-- [pip-get.py](https://github.com/TacticalHacker/PythonWebScraping/blob/master/get-pip.py)
+- [get-pip.py](https://github.com/TacticalHacker/PythonWebScraping/blob/master/get-pip.py)
 - [GitHubProfileExtracter](https://github.com/TacticalHacker/PythonWebScraping/blob/master/GitHubProfileExtracter.py)
 
 You can download Python from [this link](https://www.python.org/downloads/)
