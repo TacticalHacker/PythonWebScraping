@@ -17,3 +17,9 @@
 **Installing Python Module in Linux**
 	
  > pip install <module_name>
+ 
+ You can download Python from [this link]()
+
+Also **SUBSCRIBE** to our YouTube channel [TACTICAL HACKER](https://www.youtube.com/channel/UCbhGxvpuObxw5vZsvbKa1Cg) to get more videos on **Programming**, **Animations**, **Softwares** and other **Computer Science related topics**.
+
+Happy Coding!
