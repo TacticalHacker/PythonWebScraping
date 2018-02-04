@@ -4,6 +4,8 @@
 - [pip-get.py](https://github.com/TacticalHacker/PythonWebScraping/blob/master/get-pip.py)
 - [GitHubProfileExtracter](https://github.com/TacticalHacker/PythonWebScraping/blob/master/GitHubProfileExtracter.py)
 
+You can download Python from [this link](https://www.python.org/downloads/)
+
 **Run this command to install pip:**
 
 > python get-pip.py
@@ -17,8 +19,6 @@
 **Installing Python Module in Linux**
 	
  > pip install <module_name>
- 
- You can download Python from [this link]()
 
 Also **SUBSCRIBE** to our YouTube channel [TACTICAL HACKER](https://www.youtube.com/channel/UCbhGxvpuObxw5vZsvbKa1Cg) to get more videos on **Programming**, **Animations**, **Softwares** and other **Computer Science related topics**.
 
