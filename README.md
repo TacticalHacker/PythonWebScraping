@@ -19,6 +19,8 @@ You can download Python from [this link](https://www.python.org/downloads/)
 **Installing Python Module in Linux**
 	
  > pip install <module_name>
+ 
+To learn webscraping and write a simple web scraping code, watch video [Introduction to Web Scraping (with Python and Beautiful Soup)]() on YouTube.
 
 Also **SUBSCRIBE** to our YouTube channel [TACTICAL HACKER](https://www.youtube.com/channel/UCbhGxvpuObxw5vZsvbKa1Cg) to get more videos on **Programming**, **Animations**, **Softwares** and other **Computer Science related topics**.
 
