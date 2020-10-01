@@ -1,10 +1,10 @@
 # TACTICAL HACKER -:- https://github.com/TacticalHacker
 #Python Script to extract Profile Info from GitHub
 
-import urllib2
+import requests
 from bs4 import BeautifulSoup
 
-GitID = raw_input("Enter GitHub username: ")
+GitID = input("Enter GitHub username: ")
 type(GitID)
 try:
 	# specify the url
@@ -12,57 +12,50 @@ try:
 	quote_page = quote_page + GitID
 
 	# query the website and return the html to the variable 'page'
-	page = urllib2.urlopen(quote_page)
+	page = requests.get(quote_page)
 
 	# parse the html using beautiful soap and store in variable `soup`
-	soup = BeautifulSoup(page, 'html.parser')
+	soup = BeautifulSoup(page.text, 'html.parser')
 except:
-	print "Please enter a valid GitHub username."
+	print("Please enter a valid GitHub username.")
 	quit()
 
-print "\n\nGITHUB PROFILE INFO OF " + GitID + ": \n"
+print("\n\nGITHUB PROFILE INFO OF "+ GitID + ": \n")
 
 try:
-	fullname_box = soup.find('span', attrs={'class': 'p-name vcard-fullname d-block'})
+	fullname_box = soup.find('span', attrs={'class': 'p-name vcard-fullname d-block overflow-hidden'})
 	fullname = fullname_box.text.strip()
-	print "FULLNAME: " + fullname
+	print("FULLNAME: " + fullname)
 except:
-	print "Something went wrong while accessing Fullname!"
+	print("Something went wrong while accessing Fullname!")
 
 try:
 	username_box = soup.find('span', attrs={'class': 'p-nickname vcard-username d-block'})
 	username = username_box.text.strip()
-	print "USERNAME: " + username
+	print("USERNAME: " + username)
 except:
-	print "Something went wrong while accessing Username!"
-
-try:
-	bio_box = soup.find('div', attrs={'class': 'p-note user-profile-bio'})
-	bio = bio_box.text.strip()
-	print "BIO: " + bio
-except:
-	print "Something went wrong while accessing Bio!"
+	print("Something went wrong while accessing Username!")
 
 try:
 	address_box = soup.find('span', attrs={'class': 'p-label'})
 	address = address_box.text.strip()
-	print "ADDRESS: " + address
+	print("ADDRESS: " + address)
 except:
-	print "Something went wrong while accessing Address!"
+	print("Something went wrong while accessing Address!")
 
 try:
 	repositories_box = soup.find('span', attrs={'class': 'Counter'})
 	repositories = repositories_box.text.strip()
-	print "REPOSITORIES: " + repositories
+	print("REPOSITORIES: " + repositories)
 except:
-	print "Something went wrong while accessing Repositories!"
+	print("Something went wrong while accessing Repositories!")
 
 try:
 	contribution_box = soup.find('h2', attrs={'class': 'f4 text-normal mb-2'})
 	contribution = contribution_box.text
-	print "OTHER ACTIVITIES: "+contribution
+	print("OTHER ACTIVITIES: "+contribution)
 except:
-	print "Something went wrong while accessing Other Contributions!"
+	print("Something went wrong while accessing Other Contributions!")
 
 
 
